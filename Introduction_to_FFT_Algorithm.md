@@ -1,15 +1,14 @@
 # Polynomial Multiplication
 
-Given polynomials:
+Given polynomials \( A(x) = x^2 + 3x + 2 \), \( B(x) = 2x^2 + 1 \), and \( C(x) = 2x^4 + 6x^3 + 5x^2 + 3x + 2 \), represented by coefficient lists:
 
-- \( A(x) = x^2 + 3x + 2 \)  
-  Coefficient list: \( A = [2, 3, 1] \)
-  
-- \( B(x) = 2x^2 + 1 \)  
-  Coefficient list: \( B = [1, 0, 2] \)
-  
-- \( C(x) = 2x^4 + 6x^3 + 5x^2 + 3x + 2 \)  
-  Coefficient list: \( C = [2, 3, 5, 6, 2] \)
+\[
+\begin{align*}
+A &= [2, 3, 1] \\
+B &= [1, 0, 2] \\
+C &= [2, 3, 5, 6, 2]
+\end{align*}
+\]
 
 
 ## Coefficient Representation
