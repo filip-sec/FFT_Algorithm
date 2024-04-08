@@ -70,3 +70,5 @@ $\text{points}_C = [(-2, 9), (-1, 0), (0, 1), (1, 0), (2, 9)]$
 This polynomial represents the function $C(x)$
 
 ![Plot2](images/plot3.png)
+
+This value representation helped us to reduced the time for multiplication from our original d^2  operations to the order of only degree d operations.
