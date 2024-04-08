@@ -1,0 +1,54 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Define the first polynomial P(x) = p0 + p1x
+p0_1 = 0
+p1_1 = 1
+points_1 = [(-2, 0), (2, 2)]
+
+# Define the second polynomial P(x) = 1 + 0.5x
+p0_2 = 1
+p1_2 = 0.5
+points_2 = [(3, 0), (-1, 4)]
+
+# Define the third polynomial P(x) = 3 - x
+p0_3 = 3
+p1_3 = -1
+
+# Create x values for plotting
+x_values = np.linspace(-3, 4, 400)
+
+# Define the first polynomial function
+def polynomial_1(x):
+    return p0_1 + p1_1 * x
+
+# Define the second polynomial function
+def polynomial_2(x):
+    return p0_2 + p1_2 * x
+
+# Define the third polynomial function
+def polynomial_3(x):
+    return p0_3 + p1_3 * x
+
+# Plot the first polynomial
+plt.plot(x_values, polynomial_1(x_values), label=r'$P(x) = p_0 + p_1x$', color='blue')
+for point in points_1:
+    plt.plot(point[0], point[1], 'ro')
+    
+# Plot the second polynomial
+plt.plot(x_values, polynomial_2(x_values), label=r'$P(x) = 1 + 0.5x$', color='green')
+for point in points_2:
+    plt.plot(point[0], point[1], 'ro')
+
+# Plot the third polynomial
+plt.plot(x_values, polynomial_3(x_values), label=r'$P(x) = 3 - x$', color='red')
+
+# Set plot labels and legend
+plt.xlabel('x')
+plt.ylabel('P(x)')
+plt.title('Plot of Polynomials')
+plt.legend()
+
+# Show plot
+plt.grid(True)
+plt.show()
