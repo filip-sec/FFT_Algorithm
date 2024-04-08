@@ -1,23 +1,49 @@
-# Introduction to FFT Algorithm
+# Polynomial Multiplication
 
-## Polynomial Representation
+Given polynomials \( A(x) = x^2 + 3x + 2 \), \( B(x) = 2x^2 + 1 \), and \( C(x) = 2x^4 + 6x^3 + 5x^2 + 3x + 2 \), represented by coefficient lists:
 
-Given polynomials:
-- A(x) = x^2 + 3x + 2 represented as A = [2, 3, 1]
-- B(x) = 2x^2 + 1 represented as B = [1, 0, 2]
-- C(x) = 2x^4 + 6x^3 + 5x^2 + 3x + 2 represented as C = [2, 3, 5, 6, 2]
+\[
+\begin{align*}
+A &= [2, 3, 1] \\
+B &= [1, 0, 2] \\
+C &= [2, 3, 5, 6, 2]
+\end{align*}
+\]
 
-## Algorithm Overview
+## Coefficient Representation
 
-The Fast Fourier Transform (FFT) algorithm provides an efficient method for polynomial multiplication. Given polynomials \( A(x) \) and \( B(x) \), the algorithm computes the product polynomial \( C(x) = A(x) \times B(x) \).
+When we represent a polynomial as a list of its coefficients, each index \( k \) in the list corresponds to the coefficient of the \( k \)-th degree term in the polynomial.
 
-### Coefficient Representation
+## Computing Polynomial Multiplication
 
-Polynomials are represented as arrays of coefficients, where the index \( k \) corresponds to the degree \( k \) term of the polynomial \( C(x) \). For example, \( C[k] \) represents the coefficient of the \( k \)-th degree term of polynomial \( C(x) \).
+We can compute the product polynomial \( C = A \times B \) as follows:
 
-### Algorithm Implementation
+```python
+def multiPoly(A, B):
+    """
+    Computes the product polynomial C = A * B.
+    
+    Args:
+    A (list): Coefficients of polynomial A(x).
+    B (list): Coefficients of polynomial B(x).
+    
+    Returns:
+    list: Coefficients of polynomial C(x).
+    """
+    d = len(A) + len(B) - 1
+    C = [0] * d
+    
+    for i in range(len(A)):
+        for j in range(len(B)):
+            C[i + j] += A[i] * B[j]
+    
+    return C
 
-The algorithm multiplies two polynomials \( A(x) \) and \( B(x) \) using the distributive property. The runtime of this approach is \( O(d^2) \), where \( d \) is the degree of the polynomial. This is because each term in polynomial \( A \) has to be multiplied by all terms in polynomial \( B \).
+# Example Usage
+A = [2, 3, 1]
+B = [1, 0, 2]
+C = multiPoly(A, B)
+print(C)  # Output: [2, 3, 5, 6, 2]
 
 ## Optimization with FFT
 
