@@ -58,4 +58,10 @@ Given the polynomial function $B(x) = (x + 1)^2$ and the corresponding points:
 
 $\text{points}_B = [(-2, 9), (-1, 4), (0, 1), (1, 0), (2, 1)]$
 
+The resulting polynomial function from their multiplication is:
+$C(x) = A(x) \times B(x)$
+
+And the corresponding points for $C(x)$:
+$\text{points}_C = [(-2, 9), (-1, 0), (0, 1), (1, 0), (2, 9)]$
+
 ![Plot2](images/plot3.png)
