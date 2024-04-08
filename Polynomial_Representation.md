@@ -61,7 +61,12 @@ $\text{points}_B = [(-2, 9), (-1, 4), (0, 1), (1, 0), (2, 1)]$
 The resulting polynomial function from their multiplication is:
 $C(x) = A(x) \times B(x)$
 
+The resulting polynomial function from their multiplication is:
+$C(x) = x^4 - 2x^2 + 1$
+
 And the corresponding points for $C(x)$:
 $\text{points}_C = [(-2, 9), (-1, 0), (0, 1), (1, 0), (2, 9)]$
+
+This polynomial represents the function $C(x)$
 
 ![Plot2](images/plot3.png)
