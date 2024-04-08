@@ -44,8 +44,8 @@ def multiPoly(A, B):
 A = [2, 3, 1]
 B = [1, 0, 2]
 C = multiPoly(A, B)
-print(C)  # Output: [2, 3, 5, 6, 2]
-
+print(C)  # Output: [2, 3, 5, 6, 2] 
+```
 
 ## Optimization with FFT
 
