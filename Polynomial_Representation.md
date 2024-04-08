@@ -49,3 +49,21 @@ Two distinct representations for polynomials emerge:
 2. Value Representation {(x0, P(x0)), (x1, P(x1)), ..., (xd, P(xd))}
 
 The second representation simplifies polynomial multiplication significantly.
+
+Given the polynomial function $A(x) = (x + 1)^2$ and the corresponding points:
+
+\[
+\text{points}_A = [(-2, 1), (-1, 0), (0, 1), (1, 4), (2, 9)]
+\]
+
+Given the polynomial function $B(x) = (x + 1)^2$ and the corresponding points:
+
+\[
+\text{points}_B = [(-2, 9), (-1, 4), (0, 1), (1, 0), (2, 1)]
+\]
+
+
+poly_func = lambda x: (x + 1) ** 2
+points = [(-2, 9), (-1, 4), (0, 1), (1, 0), (2, 1)]
+
+![Plot2](images/plot3.png)
