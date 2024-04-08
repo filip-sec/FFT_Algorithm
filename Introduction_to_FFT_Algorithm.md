@@ -1,6 +1,6 @@
 # Polynomial Multiplication
 
-Given polynomials \( A(x) = x^2 + 3x + 2 \), \( B(x) = 2x^2 + 1 \), and \( C(x) = 2x^4 + 6x^3 + 5x^2 + 3x + 2 \), represented by coefficient lists:
+Given polynomials $( A(x) = x^2 + 3x + 2 )$, $( B(x) = 2x^2 + 1 )$, and $( C(x) = 2x^4 + 6x^3 + 5x^2 + 3x + 2 \)$, represented by coefficient lists:
 
 $$
 \begin{align*}
