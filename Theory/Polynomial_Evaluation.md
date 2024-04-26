@@ -43,8 +43,9 @@ $$
 P(x_{n-1}) = p_0 + p_1x_{n-1} + p_2x_{n-1}^2 + \cdots + p_dx_{n-1}^d
 $$
 
+![Plot4](images/plot4.png)
+
+Here is the plot for the polynomial $P(x)$ evaluated at $n$ points. The blue curve represents the polynomial, and the yellow dots show the values of the polynomial at the selected points.
 ## Conclusion
 By employing these techniques, we can achieve an $O(n \log n)$ recursive algorithm for polynomial evaluation. This represents a significant improvement over the naive $O(nd)$ approach.
 
-## Example
-Let's illustrate these concepts with an example.
