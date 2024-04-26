@@ -10,7 +10,7 @@ Given a polynomial $P(x)$ of degree $d$, we want to evaluate the polynomial at  
 The straightforward approach involves calculating the value of the polynomial at each point individually. However, this method is inefficient, requiring \( O(nd) \) operations to evaluate all points.
 
 ## Optimization: Even and Odd Degree Terms
-We can optimize polynomial evaluation by splitting the polynomial into even and odd degree terms. By factoring out \( x \) from the odd degree terms, we obtain two new polynomials: one with only even degree terms and the other with only odd degree terms.
+We can optimize polynomial evaluation by splitting the polynomial into even and odd degree terms. By factoring out $x$ from the odd degree terms, we obtain two new polynomials: one with only even degree terms and the other with only odd degree terms.
 
 ### Even Degree Polynomial
 Let's denote the polynomial consisting of even degree terms as $\( P_{\text{even}}(x^2) \)$.
