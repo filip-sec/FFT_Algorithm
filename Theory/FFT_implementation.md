@@ -28,15 +28,35 @@ Utilizing this fact, we can modify the second equation as follows, and also take
 
 ## Translation to Code
 
-Now, let's translate this algorithmic logic into code. Our function `fft` will take an input $p$, which is the coefficient representation of a polynomial $P$. We start by defining $n$ as the length of $p$ and assume $n$ is a power of two.
+Here's how the FFT logic is implemented in code:
+
+```python
+def FFT(P):
+    # P - [p0, p1, ..., pn-1] coeff representation
+    n = len(P) # n is a power of 2
+    if n == 1:
+        return P
+    
+    ω = e**(2πi / n)
+    
+    Pe, Po = P[0:n:2], P[1:n:2]
+    ye, yo = FFT(Pe), FFT(Po)
+    
+    y = [0] * n
+    for j in range(n//2):
+        y[j] = ye[j] + ω**j * yo[j]
+        y[j + n//2] = ye[j] - ω**j * yo[j]
+    
+    return y
+```
+
+Our function fft will take an input $p$, which is the coefficient representation of a polynomial $P$. We start by defining $n$ as the length of $p$ and assume $n$ is a power of two.
 
 Handling the base case is straightforward, as we return our original $p$ for a single element, effectively making $p$ a degree zero polynomial or a constant. Otherwise, we proceed with the recursive step.
 
-The recursive step involves splitting the polynomial into even and odd degree terms, followed by calling the `fft` function recursively on these polynomials. We denote the outputs as $y_e$ and $y_o$, as per the outline.
+The recursive step involves splitting the polynomial into even and odd degree terms, followed by calling the fft function recursively on these polynomials. We denote the outputs as $y_e$ and $y_o$, as per the outline.
 
 We then initialize our output list for the final value representation. For all $j$ up to $\frac{n}{2}$, we calculate the value representations according to our outlined method. Once all values are populated in our list, we return that list, completing the FFT.
-
-This process is an elegant convergence of all the ideas we've discussed, resulting in a concise yet powerful piece of code.
 
 ## Conclusion
 
