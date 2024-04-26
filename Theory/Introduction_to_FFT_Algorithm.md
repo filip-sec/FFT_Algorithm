@@ -16,11 +16,11 @@ $$
 
 ## Coefficient Representation
 
-When we represent a polynomial as a list of its coefficients, each index \( k \) in the list corresponds to the coefficient of the \( k \)-th degree term in the polynomial.
+When we represent a polynomial as a list of its coefficients, each index  $k$ in the list corresponds to the coefficient of the  $k-th$ degree term in the polynomial.
 
 ## Computing Polynomial Multiplication
 
-We can compute the product polynomial \( C = A \times B \) as follows:
+We can compute the product polynomial $C$ as follows:
 
 ```python
 def multiPoly(A, B):

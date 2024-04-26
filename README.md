@@ -21,7 +21,6 @@ This project focuses on the Fast Fourier Transform (FFT) algorithm, a fundamenta
 4. Performance analysis and benchmarks
 5. Applications of FFT in signal processing
 6. Examples and demonstrations
-7. Conclusion and future work
 
 ## Usage
 
@@ -34,11 +33,8 @@ To use the FFT algorithm implemented in this project, follow these steps:
 
 ## Dependencies
 
-- Python (version X.X.X)
-- NumPy (version X.X.X)
-- Matplotlib (version X.X.X) [Optional, for visualization]
+- Python 
+- NumPy
+- Matplotlib
 
-## Contributing
-
-Contributions to this 
 
