@@ -7,7 +7,7 @@ Consider the polynomial function $P(x) = p_0 + p_1x$ with the following points:
 3. $P(x) = 3 - x$
 
 
-![Plot1](images/plot.png)
+![Plot1](images/plot1.png)
 
 Two points are sufficient to uniquely define a line. This principle extends to polynomials of degree 'd', which can be uniquely determined by 'd + 1' points.
 
