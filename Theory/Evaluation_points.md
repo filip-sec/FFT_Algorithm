@@ -23,5 +23,3 @@ If we have a degree 5 polynomial, we'll need $n \geq 6$ points. Our recursive me
 We now need to find eight points that form positive-negative pairs and that each, when raised to the eighth power, equals one. The correct points are the eighth roots of unity.
 
 To generalize for any polynomial of degree $d$, we will pick $n \geq d + 1$ points, ensuring that $n$ is a power of two. The points we choose are the $nth$ roots of unity.
-
-This principle begs further explanation. But before we delve into that, let's clarify a few concepts.
