@@ -4,7 +4,7 @@
 In polynomial evaluation, we are often faced with the task of computing the value of a polynomial at multiple points. This process can become inefficient, especially for polynomials of high degree and when evaluating at numerous points. In this README, we will explore various techniques to optimize polynomial evaluation, ultimately leading to the development of the Fast Fourier Transform (FFT) algorithm.
 
 ## Problem Statement
-Given a polynomial \( P(x) \) of degree \( d \), we want to evaluate the polynomial at \( n \) points, where \( n \) is greater than \( d + 1 \).
+Given a polynomial $\( P(x) \)$ of degree \( d \), we want to evaluate the polynomial at \( n \) points, where \( n \) is greater than \( d + 1 \).
 
 ## Naive Approach
 The straightforward approach involves calculating the value of the polynomial at each point individually. However, this method is inefficient, requiring \( O(nd) \) operations to evaluate all points.
