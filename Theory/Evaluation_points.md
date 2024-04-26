@@ -4,7 +4,9 @@ When evaluating polynomials, the choice of evaluation points is crucial, particu
 
 ## Which Evaluation Points?
 
-Let's consider we have a degree 3 polynomial, which requires at least $n = 4$ points for its value representation. These points need to be positive-negative pairs, so we can write them as $x_1$, $-x_1$, $x_2$, and $-x_2$.
+Let's consider we have a degree 3 polynomial $P(x_0) = x^3 + x^2 - x - 1$ , which requires at least $n = 4$ points for its value representation. These points need to be positive-negative pairs, so we can write them as $x_1$, $-x_1$, $x_2$, and $-x_2$.
+
+![Plot5](images/plot5.png)
 
 The recursive step in the FFT algorithm will require that we evaluate the odd and even parts of the polynomial at two points, $x_1^2$ and $x_2^2$. For the recursion to work effectively, these two points must also form positive-negative pairs, implying an equivalence between $x_2^2$ and $-x_1^2$.
 
@@ -20,6 +22,6 @@ If we have a degree 5 polynomial, we'll need $n \geq 6$ points. Our recursive me
 
 We now need to find eight points that form positive-negative pairs and that each, when raised to the eighth power, equals one. The correct points are the eighth roots of unity.
 
-To generalize for any polynomial of degree $d$, we will pick $n \geq d + 1$ points, ensuring that $n$ is a power of two. The points we choose are the $n$th roots of unity.
+To generalize for any polynomial of degree $d$, we will pick $n \geq d + 1$ points, ensuring that $n$ is a power of two. The points we choose are the $nth$ roots of unity.
 
 This principle begs further explanation. But before we delve into that, let's clarify a few concepts.
