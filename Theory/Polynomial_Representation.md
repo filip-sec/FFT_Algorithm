@@ -7,7 +7,7 @@ Consider the polynomial function $P(x) = p_0 + p_1x$ with the following points:
 3. $P(x) = 3 - x$
 
 
-![Plot1](images/plot2.png)
+![Plot1](images/plot.png)
 
 Two points are sufficient to uniquely define a line. This principle extends to polynomials of degree 'd', which can be uniquely determined by 'd + 1' points.
 
@@ -69,6 +69,6 @@ $\text{points}_C = [(-2, 9), (-1, 0), (0, 1), (1, 0), (2, 9)]$
 
 This polynomial represents the function $C(x)$
 
-![Plot2](images/plot3.png)
+![Plot3](images/plot3.png)
 
 This value representation helped us to reduced the time for multiplication from our original d^2  operations to the order of only degree d operations.
